@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://el96415964.github.io/clearframe/sitemap.xml
