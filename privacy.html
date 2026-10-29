@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Read how ClearFrame processes images locally, what data the website collects, and the limitations of browser-based metadata cleaning.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://el96415964.github.io/clearframe/privacy.html">
+<meta name="color-scheme" content="light"><title>Privacy & Limitations — ClearFrame</title>
+<style>
+:root{--ink:#17251f;--muted:#61716a;--paper:#f6f8f4;--line:#dce5dd;--green:#246b4b}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}main,header,footer{width:min(760px,calc(100% - 32px));margin:auto}header{padding:24px 0}a{color:var(--green)}h1{line-height:1.15;font-size:clamp(2rem,6vw,3.2rem)}h2{margin-top:2rem}p,li{color:#33463b}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:clamp(18px,4vw,28px)}footer{padding:28px 0 40px;color:var(--muted);font-size:.9rem}
+</style></head>
+<body><header><a href="./">← Back to ClearFrame</a></header><main><h1>Privacy and limitations</h1>
+<p>ClearFrame is a small browser-based tool that redraws a selected image and exports a new PNG file. It is designed to help people create a fresh copy of an image without carrying over the original file's EXIF metadata.</p>
+<section class="card"><h2>How your image is processed</h2><p>The page uses browser image and canvas features to process the selected file on your device. The current version does not contain an image-upload endpoint, account system, analytics script, or advertising script. Your image is not intentionally sent to a ClearFrame server.</p>
+<h2>What this tool does not promise</h2><p>ClearFrame is not a certified forensic sanitization tool. The output is expected not to preserve the source file's EXIF metadata, but browser behavior, file formats, color profiles, and metadata types can vary. If the image is sensitive, independently inspect the output with a trusted metadata tool before sharing it.</p>
+<h2>Image quality and formats</h2><p>ClearFrame exports a PNG. It may increase file size or alter color handling, and it does not preserve animation; animated images are reduced to a still frame. Some formats, including HEIC/HEIF, may not be supported by your browser.</p>
+<h2>Information handled by the website</h2><p>The tool itself does not ask for your name, email address, or an account. The static page does not include its own analytics or advertising code. GitHub Pages, which hosts the site, may process ordinary server request data under GitHub's own policies.</p>
+<h2>Changes</h2><p>This is an independent prototype and may change as it is tested. Do not rely on it as the only privacy protection for high-risk or highly sensitive images.</p></section>
+<p><a href="./">Return to the image tool</a> · <a href="./how-to-remove-image-metadata.html">Read the practical guide</a></p></main><footer>ClearFrame is an independent project and is not affiliated with camera or image-editing software vendors.</footer></body></html>
